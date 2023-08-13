@@ -1,9 +1,9 @@
 ---
-title: Cocodine
+title: Widget Fusion
 publishDate: 2023-03-01 00:00:00
-img: /assets/cocodine.png
-img_alt: Cocodine
-website: https://www.cocodine.me/en
+img: /assets/widgetify-mockup.png
+img_alt: widget fusion
+website: https://www.widgetfusion.com/
 description: |
   Transform your website with our magical no-code tool! Effortlessly add custom widgets without any coding knowledge required
 tags:
