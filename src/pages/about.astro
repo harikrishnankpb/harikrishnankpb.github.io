@@ -163,7 +163,10 @@ import Hero from "../components/Hero.astro";
   .content :global(a:focus) {
     text-decoration-color: currentColor;
   }
-
+  @media (max-width: 50em) {
+    .year-passing {
+    }
+  }
   @media (min-width: 50em) {
     .about {
       display: grid;
@@ -177,6 +180,18 @@ import Hero from "../components/Hero.astro";
     section {
       display: contents;
       font-size: var(--text-lg);
+    }
+  }
+  /* Default styles for larger screens */
+  .education-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Media query for mobile screens */
+  @media (max-width: 768px) {
+    .education-title {
+      flex-direction: column;
     }
   }
 </style>
