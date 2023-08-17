@@ -17,6 +17,7 @@ console.log(data);
     loading="lazy"
     decoding="async"
   />
+  <span class="description">{data.description}</span>
 </a>
 
 <style>
@@ -38,10 +39,22 @@ console.log(data);
 
   .card:hover {
     box-shadow: var(--shadow-md);
+    .description {
+      display: block; /* Show the description when card is hovered */
+    }
   }
 
   .title {
     grid-area: 1 / 1 / 2 / 2;
+    z-index: 1;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--gray-999);
+    color: var(--gray-200);
+    border-radius: 0.375rem;
+  }
+  .description {
+    grid-area: 7 / 1 / 8 / 8;
     z-index: 1;
     margin: 0.5rem;
     padding: 0.5rem 1rem;
@@ -65,6 +78,22 @@ console.log(data);
 
     .title {
       border-radius: 0.9375rem;
+    }
+    .description {
+      display: none;
+    }
+  }
+  @media (max-width: 50em) {
+    .description {
+      /* display: none; */
+      font-size: x-small;
+    }
+    .title {
+      font-size: small;
+    }
+    .card {
+      height: 16rem; /* Increased card height for mobile view */
+      grid-template: auto 1fr auto / auto 1fr; /* Adjusted template rows */
     }
   }
 </style>
